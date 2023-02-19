@@ -150,7 +150,7 @@ type Config struct {
 	ReSchedulableGracePeriod time.Duration `env:"RESCHEDULABLE_GRACE_PERIOD" envDefault:"60s"`
 
 	// Sleep duration in case of service isHalted
-	PauseDuration time.Duration `env:"PAUSE_DURATION" envDefault:"60s"`
+	PauseDuration time.Duration `env:"PAUSE_DURATION" envDefault:"90s"`
 
 	GrpcMaxCallRecvMsgSize int `env:"GRPC_MAX_CALL_RECV_MSG_SIZE" envDefault:"16777216"`
 
