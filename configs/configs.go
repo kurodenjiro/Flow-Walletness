@@ -70,7 +70,7 @@ type Config struct {
 
 	Host                 string        `env:"HOST"`
 	Port                 int           `env:"PORT" envDefault:"3000"`
-	ServerRequestTimeout time.Duration `env:"SERVER_REQUEST_TIMEOUT" envDefault:"60s"`
+	ServerRequestTimeout time.Duration `env:"SERVER_REQUEST_TIMEOUT" envDefault:"90s"`
 	AccessAPIHost        string        `env:"ACCESS_API_HOST,notEmpty"`
 	ChainID              flow.ChainID  `env:"CHAIN_ID" envDefault:"flow-emulator"`
 
