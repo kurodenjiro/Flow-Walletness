@@ -84,7 +84,7 @@ type Config struct {
 
 	// Defines the maximum number of active jobs that can be queued before
 	// new jobs are rejected.
-	WorkerQueueCapacity uint `env:"WORKER_QUEUE_CAPACITY" envDefault:"1000"`
+	WorkerQueueCapacity uint `env:"WORKER_QUEUE_CAPACITY" envDefault:"2000"`
 	// Number of concurrent workers handling incoming jobs.
 	// You can increase the number of workers if you're sending
 	// too many transactions and find that the queue is often backlogged.
