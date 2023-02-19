@@ -147,7 +147,7 @@ type Config struct {
 
 	// Grace time period before re-scheduling jobs that are up for immediate
 	// restart (such as NO_AVAILABLE_WORKERS or ERROR).
-	ReSchedulableGracePeriod time.Duration `env:"RESCHEDULABLE_GRACE_PERIOD" envDefault:"60s"`
+	ReSchedulableGracePeriod time.Duration `env:"RESCHEDULABLE_GRACE_PERIOD" envDefault:"120s"`
 
 	// Sleep duration in case of service isHalted
 	PauseDuration time.Duration `env:"PAUSE_DURATION" envDefault:"90s"`
